@@ -1,0 +1,6 @@
+Claim,Author's Evidence,Our Reproduction Evidence,Supported?,Explanation
+Random Forest reaches ~99% precision/recall on held-out data,classification_report in blog (~0.99 for both classes),"Author-style split: acc=0.9990, recall=0.9983; Official test: acc=0.7757, recall=0.6260",Partially,"Metrics near 99% reproduce on the same random split setup, but drop sharply on the official NSL-KDD test set."
+ROC-AUC ≈ 0.9987,Printed ROC-AUC in tutorial output,Author-style AUC=1.0000; Official test AUC=0.9660,Partially,Very high AUC reproduces on the random split; official test AUC remains strong (≈0.97) but not 0.999.
+Training completes in under 5 minutes,Stated in tutorial text,Full pipeline completed in a few minutes on a standard laptop CPU,Supported,Runtime claim is realistic for NSL-KDD with sklearn.
+Isolation Forest helps detect unknown threats,Trains IF on normal traffic and combines with RF in API,Official test IF recall=0.6740 vs RF recall=0.6260,Partially,"IF slightly improves attack recall here, but still misses many attacks; not a standalone solution."
+Real-world performance will be lower than benchmark numbers,Explicit caveat in blog,Official test accuracy 0.7757 vs author-split 0.9990,Supported,Our benchmark vs random-split gap confirms the author's caution.

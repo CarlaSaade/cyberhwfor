@@ -1,0 +1,14 @@
+protocol_type,error_count,feature,service,flag
+tcp,4328,protocol_type,,
+udp,693,protocol_type,,
+icmp,36,protocol_type,,
+,1391,service,telnet,
+,870,service,pop_3,
+,667,service,private,
+,605,service,ftp,
+,398,service,http,
+,3728,flag,,SF
+,340,flag,,RSTO
+,319,flag,,REJ
+,249,flag,,S0
+,241,flag,,S3

@@ -1,0 +1,24 @@
+# Course / local files that must not be submitted
+haifaUEX.pdf
+summary (1).pdf
+summary*.pdf
+
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*credentials*
+
+# Large dataset files — download with scripts/download_data.py
+data/KDDTrain+.txt
+data/KDDTest+.txt
+
+# Optional local editor settings
+.vscode/
+.idea/

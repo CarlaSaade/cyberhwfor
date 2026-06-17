@@ -1,0 +1,10 @@
+{
+  "constant_columns": [
+    "num_outbound_cmds"
+  ],
+  "duplicated_columns": [],
+  "highly_correlated_pairs": [
+    "srv_serror_rate ~ serror_rate",
+    "srv_rerror_rate ~ rerror_rate"
+  ]
+}
